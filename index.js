@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 io.on("connection", (socket) => {
-  socket.on("chat message", async (msg) => {
+  socket.on("chat messages", async (msg) => {
     let result;
     try {
       result = await db.run(`INSERT INTO messages (content) VALUES (?)`, msg);
