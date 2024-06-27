@@ -9,6 +9,7 @@ async function main() {
   const db = await open({
     filename: "chat.db",
     driver: sqlite3.Database,
+
   });
 }
 
