@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS messages (
 const app = express();
 const server = createServer(app);
 const io = new Server(server, {
-  connectionStateRecovery: {},
+  connectionStateRecovery: {server},
 });
 
 app.get("/", (req, res) => {
