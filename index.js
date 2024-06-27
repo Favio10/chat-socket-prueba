@@ -49,7 +49,7 @@ if (!socket.recovered) {
       "SELECT id, content FROM messages WHERE id > ?",
       [socket.handshake.auth.serverOffset || 0],
       (_err, row) => {
-        socket.emit("chat message", row.content, row.id);
+        socket.emit("chat messages", row.content, row.id);
       }
     );
   } catch (e) {
