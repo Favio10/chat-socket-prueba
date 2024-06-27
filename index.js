@@ -39,7 +39,7 @@ io.on("connection", (socket) => {
     } catch (e) {
       return;
     }
-    io.emit("chat message", msg, result.lastID);
+    io.emit("chat messages", msg, result.lastID);
   });
 });
 
