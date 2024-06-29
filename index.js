@@ -58,5 +58,5 @@ if (!socket.recovered) {
 }
 
 server.listen(3000, () => {
-  console.log("server running in http://localhost:3000");
+  console.log("server running at http://localhost:3000");
 });
