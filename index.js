@@ -53,7 +53,7 @@ if (!socket.recovered) {
       }
     );
   } catch (e) {
-    console.log("algo salio mal");
+    console.log("algo salio demasiado mal");
   }
 }
 
